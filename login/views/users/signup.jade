@@ -1,0 +1,22 @@
+extends ../templates/default
+
+block content
+  div(class='row')
+    div(class='col-md-6 col-md-offset-3')
+      div(class='panel panel-default')
+        div(class='panel-heading') Registrarme
+        div(class='panel-body')
+          form(action='http://localhost:3000/auth/signup' method='post')
+            div(class='for-group')
+              label(for="email") Email
+              input(type="email" name='email' id='email' placeholder='Email' class='form-control')
+            br
+            div(class='for-group')
+              label(for="nombre") Nombre
+              input(type="text" name='nombre' id='nombre' placeholder='Nombre' class='form-control')
+            br
+            div(class='for-group')
+              label(for="password") Password
+              input(type="password" name='password' id='password' placeholder='password' class='form-control')
+            br
+            button(type="submit" class='btn btn-defaukt') Registrarme    
